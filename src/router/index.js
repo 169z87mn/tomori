@@ -1,18 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HomePage from '@/page/HomePage'
-import NotFound from '@/page/NotFound'
 
 Vue.use(Router)
 
+const routes = [
+  {
+    path: '/',
+    name: 'RadioTab',
+    component: () => import('@/components/radio/radio-tab')
+  },
+  { 
+    path: '*', 
+    component: () => import('@/components/not-found')
+  }
+]
+
 export default new Router({
   mode: 'history',
-  routes: [
-    {
-      path: '/',
-      name: 'HomePage',
-      component: HomePage
-    },
-    { path: '*', component: NotFound }
-  ]
+  routes
 })
