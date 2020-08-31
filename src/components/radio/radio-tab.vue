@@ -1,11 +1,9 @@
 <template>
   <div>
     <b-tabs pills card>
-      <div v-for="(tab, i) in tabs" :key="i">
-        <b-tab :title="tab">
-          <RadioList :tab="i"/>
-        </b-tab>
-      </div>
+      <b-tab v-for="(tab, i) in tabs" :key="i" :title="tab">
+        <RadioList :tab="i"/>
+      </b-tab>
     </b-tabs>
   </div>
 </template>
@@ -18,7 +16,7 @@ export default {
     RadioList
   },
   data: () => ({
-    tabs: ["月", "火", "水", "木", "金", "土", "日"]
+    tabs: ["月"] //"火", "水", "木", "金", "土", "日"]
   })
 }
 </script>
