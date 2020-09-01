@@ -16,4 +16,12 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#app {
+  background-color: #DEDEDE;
+  height: 100rem;
+}
+</style>

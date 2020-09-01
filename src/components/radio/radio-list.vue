@@ -1,7 +1,9 @@
 <template>
   <div>
-    <RadioCard v-for="(radio, key) in radios" :key="key" :radio="radio">
-    </RadioCard>
+    <b-card-group deck>
+      <RadioCard v-for="(radio, key) in radios" :key="key" :radio="radio">
+      </RadioCard>
+    </b-card-group>
   </div>
 </template>
 
@@ -30,3 +32,9 @@ export default {
   }
 }
 </script>
+
+<style>
+RadioCard {
+  background-color: #F8F8F7;
+}
+</style>
