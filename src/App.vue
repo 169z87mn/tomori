@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <NavBar/>
-    <router-view/>
+    <NavBar />
+    <RadioTab />
   </div>
 </template>
 
 <script>
 import NavBar from './components/header/nav-bar'
+import RadioTab from './components/radio/radio-tab'
 
 export default {
   name: 'App',
   components: {
-    NavBar
+    NavBar,
+    RadioTab
   }
 }
 </script>

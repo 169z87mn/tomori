@@ -1,6 +1,10 @@
 <template>
   <b-navbar class="bg-color" typotype="dark">
-    <b-navbar-brand><p class="navTitle h2">tomori</p></b-navbar-brand>
+    <b-navbar-brand>
+      <p class="navTitle h2">
+        tomori
+      </p>
+    </b-navbar-brand>
   </b-navbar>
 </template>
 

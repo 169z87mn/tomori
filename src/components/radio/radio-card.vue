@@ -1,10 +1,12 @@
 <template>
   <b-card
     class="radioCard"
-    :title=radio.screen_title
+    :title="radio.screen_title"
   >
     <b-card-text>
-      <li v-for="(psn, i) in radio.personality" :key="i">{{psn}}</li>
+      <li v-for="(psn, i) in radio.personality" :key="i">
+        {{ psn }}
+      </li>
     </b-card-text>
   </b-card>
 </template>
@@ -12,7 +14,10 @@
 <script>
 export default {
   props: {
-    radio: Object
+    radio: {
+      type: Object,
+      default: null
+    }
   },
   data: () => ({
   }),
