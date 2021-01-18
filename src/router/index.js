@@ -9,7 +9,12 @@ const routes = [
     name: 'RadioTab',
     component: () => import('@/components/radio/radio-tab')
   },
-  { 
+  {
+    path: '/radio/newprogram',
+    name: 'NewRadioForm',
+    component: () => import('@/components/new-radio-form')
+  },
+{ 
     path: '*', 
     component: () => import('@/components/not-found')
   }

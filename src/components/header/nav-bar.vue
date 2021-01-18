@@ -1,9 +1,11 @@
 <template>
   <b-navbar class="bg-color" typotype="dark">
     <b-navbar-brand>
-      <p class="navTitle h2">
-        tomori
-      </p>
+      <a href="/" style="text-decoration:none">
+        <p class="navTitle h2">
+          tomori
+        </p>
+      </a>
     </b-navbar-brand>
   </b-navbar>
 </template>
